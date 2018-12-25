@@ -1,8 +1,4 @@
 # @package dcr
-# --------------------------------------------
-# @author Aurora Lorelli
-#---------------------------------------------
+# @author Aurora Loreli
 # @desc Destination Cross River Project.
-#---------------------------------------------
-# @copyright None
-#---------------------------------------------
+# @copyright 2018 Aurora Loreli
