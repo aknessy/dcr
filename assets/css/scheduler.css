@@ -1,0 +1,70 @@
+/**
+* CASCADING STYLESHEET
+**/
+.scheduler{
+    display: block;
+    padding: 15px;
+    width: 70%;
+    position: relative;
+    margin: 60px;
+    border: 1px solid rgba(203,169,111,0.7);}
+.scheduler .scheduler-day,
+.scheduler .scheduler-month,
+.scheduler .scheduler-year{
+    color: #fff;
+    position: absolute;
+    border: 1px solid rgba(203,169,111,0.7);;}
+.scheduler .scheduler-day,
+.scheduler .scheduler-year{
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Merriweather', 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 10px 15px;}
+.scheduler .scheduler-day{
+    color: rgba(203,169,111,1);
+    text-shadow: 2px 2px 3px rgba(36, 35, 35, 0.8), 3px 3px 4px rgba(255,255,255,0.5);
+    top: -30px;
+    left: -30px;
+    right: auto;}
+.scheduler .scheduler-month{
+    color: rgba(203,169,111,1);
+    text-transform: uppercase;
+    top: -25px;
+    font-size: 14px;
+    font-weight: bold;
+    right: 0;
+    left: auto;
+    border: 0px none}
+.scheduler .scheduler-year{
+    bottom: -10px;
+    right: 0;
+    left: auto;}
+.scheduler .scheduler-text{
+    font-family: 'Thasadith', sans-serif;
+    color: rgb(211, 177, 120);
+    font-size: 14px;
+    display: block;
+    padding-left: 55px;
+    font-size: 14px;
+    width: 100%;}
+.scheduler .scheduler-text .event{
+    text-overflow: ellipsis;
+    width: 215px;
+    white-space: nowrap;
+    overflow: hidden;}
+.scheduler .scheduler-text span{
+    font-weight: bolder;
+    text-transform: uppercase;}
+/**
+**
+**/
+.scheduler.scheduler-reversed .scheduler-day{
+    right: -30px;
+    left: auto;}
+.scheduler.scheduler-reversed .scheduler-month{
+    left: 0;
+    right: auto}
+.scheduler.scheduler-reversed .scheduler-text{
+    padding-left: 0;
+    padding-right: 50px;}
