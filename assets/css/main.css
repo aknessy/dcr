@@ -24,7 +24,9 @@ body{
     background: #fdfbfb;
     color: #333333;
     font-family: 'Segoe UI', serif;
-    font-size: 13px;}   
+    font-size: 13px;}  
+body#zoomed{
+    zoom: 90%}
 h1,h2,h3,h4,h5,h6{
     font-weight: bold;
     font-family: 'Merriweather', serif;
@@ -115,23 +117,38 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
     list-style: none;}
 .dcr-header .dcr-navigation li{
-    float: left;}
+    float: left;
+    position: relative;}
 .dcr-header .dcr-navigation li a{
     display: block;
     float: left;
-    padding: 12px 15px;
+    padding: 16px;
     font-size: 12px;
-    color: #f8f8f8;}
+    color: #f8f8f8;
+    height: 54px;}
+.dcr-header .dcr-navigation li ul{
+    display: none;
+    background-image: linear-gradient(to bottom right, rgb(203, 169, 111) 0%, rgb(221,184,119) 100%);
+    background-image: linear-gradient(rgb(203,169,111), rgb(221,184,119));
+    border: 1px solid rgba(204, 159, 80, 0.57);
+    border-top: 0px none;
+    position: absolute;
+    top: 100%;
+    left: 0;}
 .dcr-header.dcr-header.dcr-fixed-header .dcr-navigation li:not(.dcr-access) a{
-    padding: 15px 15px;}
+    height: 60px;
+    padding: 16px;}
 .dcr-header .dcr-navigation li:not(.dcr-access):hover a,
 .dcr-header .dcr-navigation li.active:not(.dcr-access) a,
 .dcr-header .dcr-navigation li.active:not(.dcr-access):hover a{
     background-image: linear-gradient(to bottom right, rgba(203, 169, 111,.9) 0%, rgba(221,184,119,.9) 100%);
-    background-image: linear-gradient(rgba(203,169,111,.39), rgba(221,184,119,.9));}
+    background-image: linear-gradient(rgba(203,169,111,.39), rgba(221,184,119,.9));
+    text-decoration:  none;}
 .dcr-header .dcr-navigation li a:hover{
     text-decoration: none;
     color: #fefefe;}
+.dcr-header .dcr-navigation li:first-of-type:hover a {
+    background-image: none;}
 .dcr-header .dcr-navigation li.dcr-access{
     min-height: 54px;}
 .dcr-header .dcr-navigation li.dcr-access span{
@@ -170,6 +187,21 @@ h1,h2,h3,h4,h5,h6{
     text-decoration: none;
     outline: none;
     color: #222222;}
+.dcr-header .dcr-btn-standalone{
+    padding: 15px 15px 15px;
+    font-size: 18px;
+    float: left;
+    color: #fff;
+    height: 54px;
+    position: relative;}
+.dcr-header .dcr-btn-standalone:hover{
+    background-image: linear-gradient(to bottom right, rgba(203, 169, 111,.9) 0%, rgba(221,184,119,.9) 100%);
+    background-image: linear-gradient(rgba(203,169,111,.39), rgba(221,184,119,.9));}
+.dcr-header .dcr-btn-standalone:first-of-type:hover{
+    background: none;
+    text-decoration: none;}
+.dcr-header .dcr-btn-standalone > span{
+    color: rgba(204, 159, 80, 0.6)}
 *.dcr-icon{
     display: inline;
     font-size: 14px;
