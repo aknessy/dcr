@@ -1,0 +1,41 @@
+.masonry{
+    clear: both;
+    display: block;
+    width: 100%;}
+.masonry .grid-sizer{
+    width: calc(100%/4);}
+.masonry .item{ 
+    display: inline-block;
+    width: calc(100%/4)}
+.masonry .item .image{
+    width: 100%;
+    height: 100%;}
+.masonry .item .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    color: #fff;
+    display: none;}
+.masonry .item .overlay > .title {
+    background-color: rgba(0,0,0,0.80);
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 5px}
+.masonry .item .overlay > .description {
+    clear: both;
+    padding: 7px 7px;
+    margin: 0;}
+.masonry .item .overlay > .description > p {
+    margin: 0;
+    font-size: 10px;
+    width: 76px;}
+.masonry .item:hover .overlay {
+    display: block;}
+

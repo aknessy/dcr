@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Destination CRS | Location</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Thasadith" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/h-scroll.css" />
+        <link rel="stylesheet" href="./assets/css/gallery.layout.css" />
+        <link rel="stylesheet" href="./assets/css/mobile.layout.css" />
+
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGoHl8S1ySCZTjuaVv165558QzCT4ipT0"></script>
+        <script src="./assets/js/jquery.googlemap.js"></script> 
+        <script src="./assets/js/jquery.nicescroll.min.js"></script>
+        <script src="./assets/js/jssor.slider.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="container --mobile-wrapper pb40">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <header id="header" class="--mobile-layout-header --mobile-fluid">                            
+                            <div class="col-xs-1 p0">
+                                <a href="#" class="btn btn-link"><i class="zmdi zmdi-long-arrow-left"></i></a>
+                            </div>
+                            
+                            <div class="col-xs-10">
+                                <div class="row">
+                                    <div class="--mobile-home-search">
+                                        <form action="" class="form form-horizontal" method="post" data-ajax="true">
+                                            <div class="input-group input-group-sm">
+                                                <input type="text" class="form-control" placeholder="Search Destination Cross River" aria-describedby="Search Box">
+                                                <span class="input-group-btn">
+                                                    <button id="submitBtn" type="submit" class="btn btn-default" type="button"><span class="zmdi zmdi-search-for"></span></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-xs-1 p0">
+                                <a href="#" id="menuOpenBtn" class="btn btn-link" data-target="menuSidebar"><i class="zmdi zmdi-more"></i></a>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div id="contentContainer" class="--mobile-content --mobile-fluid">
+                            <div class="--mobile-content-inner mt40">
+                                <div class="--mobile-location-float">
+                                    <div class="--mobile-update-preference">
+                                        <div class="box --themed-twitter">
+                                            <div class="col-xs-2">
+                                                <a href="businesses.html" class="preference-item">
+                                                    <i class="zmdi zmdi-local-store"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <a href="javascript:void()" class="preference-item">
+                                                    <i class="zmdi zmdi-hotel"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <a href="javascript:void()" class="preference-item">
+                                                    <i class="zmdi zmdi-hospital"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <a href="javascript:void()" class="preference-item">
+                                                    <i class="zmdi zmdi-truck"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <a href="javascript:void()" class="preference-item">
+                                                    <i class="zmdi zmdi-account-add"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <a href="javascript:void()" class="preference-item current">
+                                                    <i class="zmdi zmdi-info"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box">
+                                        <div class="--content-header --mobile-fluid">
+                                            <div class="content-inner">
+                                                <h4>EaziBizz</h4>
+                                            </div>
+                                        </div>
+                                        <div class="--content-body --mobile-fluid">
+                                            <div class="content-inner">
+                                                <p>EaziBizz is an Itinerant-first eBusiness & Public Services Listing and Management System. It is being implemented in
+                                                    CRS under the auspice of the Cross River State Desination Management Organisation - the Cross River State Tourism
+                                                    Bureau.</p>
+                                                <p style="text-indent: 10px;">EaziBizz Service; Is SMART path to business success - whether its goods or services. It is a
+                                                     sure path away from unemployment or underemployment to SELF employment. It is also the catalyst to creating mass employment.</p>
+                                                
+                                                <h5 class="content-inner-header --themed-twitter">Why EaziBizz?</h5>
+                                                
+                                                <ul class="arrowed-list">
+                                                    <li>A Sotware-as-a-Service and A Software-as-a-Business</li>
+                                                    <li>Mobile first solution (services are fully accessible using the mobile phone among other personal electronic devices)</li>
+                                                    <li>Cross-cutting technology (EaziBizz is accessible via Multiple Online and Offline channels - i.e. WhatsApp and
+                                                    Telegram messenger, Web, App, USSD and SmarText)</li>
+                                                    <li>Offline functionality ensures owners of "dumb" phones can still access essential bits of EaziBizz Services.</li>
+                                                </ul>
+                                                
+                                                <h5 class="content-inner-header --themed-twitter">EaziBizz System Features</h5>
+                                                
+                                                <ul class="arrowed-list">
+                                                    <li>Business Listing</li>
+                                                    <li>Market and Business Intelligence service</li>
+                                                    <li>Enterprise, interactive customer feedback service</li>
+                                                    <li>Enterprise eInvoicing and ePayment (mobile wallet driven) system (advsncing financial inclusion) service</li>
+                                                    <li>Integrated social insurance services</li>
+                                                    <li>Corporate governance framework for consumers and traders powered by the EaziBizz IDentity management system.</li>
+                                                    <li>Enterprise Customer Loyelty Reward service (all invoices are automatic raffle tickets)</li>
+                                                </ul>
+
+                                                <h5 class="content-inner-header --themed-twitter">Benefits</h5>
+
+                                                <ul class="arrowed-list">
+                                                    <li>Offers FREE electronic listing of public services and businesses - itinerant, small, medium and large scale.</li>
+                                                    <li>Exponentially improved access to business, with improved productivity and profitability.</li>
+                                                    <li>Affords itinerant, small, medium and large scale businesses clear business and market INSIGHT.</li> 
+                                                    <li>Opens up businesses - itinerant, small, medium and large - to the global market.</li>
+                                                    <li>Provides consumers smart access to market.</li>
+                                                    <li>Advances a centralised, integrated Customer Loyalty Reward system.</li>
+                                                    <li>Advances a cashless economy - for the banked and unbanked - using the enteprise, integrated EaziBizz eInvoicing and
+                                                    mobile-wallet driven ePayment system.</li>
+                                                    <li>Entrenches market governance beneficial to all parties in the business supply and value chain.</li>
+                                                    <li>Guaranteed finacial inclusion with all the benefits it attracts.</li>
+                                                    <li>Advances social insurance schemes integration - i.e. Health, conbtributory pension and housing scheme</li>
+                                                    <li>Creates digital ecosystem for SMART cooperative management.</li>
+                                                </ul>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+
+                                    <div class="--mobile-location-album-float">
+                                        <div class="header">
+                                            <h5><small>DEVELOPMENT PARTNERS</small></h5>
+                                        </div>
+                                        <div class="app">
+                                            <ul class="hs full">
+                                                <li class="item"><img src="./assets/imgs/fad-fm-calabar-logo.png" alt="FAD FM" class="image" /></li>
+                                                <li class="item"><img src="./assets/imgs/crossriverwatch-logo2.png" alt="CRS Watch" class="image" /></li>
+                                                <li class="item"><img src="./assets/imgs/CRSTB-logo.jpg" alt="CRS Tourism" class="image" /></li>
+                                                <li class="item"><img src="./assets/imgs/empretec-logo.jpg" alt="Empretec Ng." class="image" /></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="--mobile-location-album-float">
+                                    <div class="--mobile-float-footer --mobile-fluid">
+                                        <div class="content-inner">
+                                            <p class="m0 p0 text-center">&copy; 2018 destination Cross River</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="--mobile-fixed-menubar --menubar-colored">
+                        <!--<div class="--add-float">
+                            <a href="javascript:void()" class="btn btn-default textual"><i class="zmdi zmdi-plus"></i></a>
+                        </div>-->
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-3 p0">
+                                    <a href="">
+                                        <i class="zmdi zmdi-home"></i>
+                                        <span>Home</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-3 p0">
+                                    <a href="news.html">
+                                        <i class="zmdi zmdi-library"></i>
+                                        <span>Updates</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-3 p0">
+                                    <a href="places.html">
+                                        <i class="zmdi zmdi-landscape"></i>
+                                        <span>Places</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-3 p0">
+                                    <a href="people.html">
+                                        <i class="zmdi zmdi-accounts-outline"></i>
+                                        <span>People</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="sideBarMenu" class="--mobile-menu-top close">
+                <div class="header-opaque">
+                    <img src="assets/imgs/dcr-logo.png" alt="destination Cross River" />
+                    <button id="menuCloseBtn" class="--menu-close-btn"><i class="zmdi zmdi-close"></i></button>
+                </div>
+                <div class="nicescroll-box">
+                    <ul class="scroll" role="navigation">
+                        <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
+                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
+                        <li><a href="user-account.html"><i class="zmdi zmdi-account-o"></i> User Account</a></li>
+                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Market Places</a></li>
+                        <li><a href="places.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
+                        <li><a href="schedule.html"><i class="zmdi zmdi-calendar"></i> Carnival Schedule</a></li>
+                        <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-item"></i> Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/clamp.min.js"></script>
+        <script src="assets/js/mobile.app.js"></script>
+    </body>
+</html>
