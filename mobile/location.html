@@ -6,7 +6,6 @@
         <title>Destination CRS | Location</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Thasadith" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/h-scroll.css" />
         <link rel="stylesheet" href="./assets/css/gallery.layout.css" />
         <link rel="stylesheet" href="./assets/css/mobile.layout.css" />
@@ -24,31 +23,64 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="row">
-                        <header id="header" class="--mobile-layout-header --mobile-fluid">                            
-                            <div class="col-xs-1 p0">
-                                <a href="#" class="btn btn-link"><i class="zmdi zmdi-long-arrow-left"></i></a>
-                            </div>
-                            
-                            <div class="col-xs-10">
+                        <header id="header" class="--mobile-layout-header --mobile-fluid">
+                            <div class="col-xs-12">
                                 <div class="row">
-                                    <div class="--mobile-home-search">
+                                    <div class="--mobile-home-search --mobile-bg-gold">
                                         <form action="" class="form form-horizontal" method="post" data-ajax="true">
-                                            <div class="input-group input-group-sm">
-                                                <input type="text" class="form-control" placeholder="Search Destination Cross River" aria-describedby="Search Box">
-                                                <span class="input-group-btn">
-                                                    <button id="submitBtn" type="submit" class="btn btn-default" type="button"><span class="zmdi zmdi-search-for"></span></button>
-                                                </span>
-                                            </div>
+                                            <input type="text" class="form-control --mobile-input-override" placeholder="Search"
+                                                aria-describedby="Search Box">
                                         </form>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
-                            <div class="col-xs-1 p0">
-                                <a href="#" id="menuOpenBtn" class="btn btn-link" data-target="menuSidebar"><i class="zmdi zmdi-more"></i></a>
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="--mobile-fixed-menubar --menubar-colored --mobile-fluid">
+                                        <!--<div class="--add-float">
+                                            <a href="javascript:void()" class="btn btn-default textual"><i class="zmdi zmdi-plus"></i></a>
+                                        </div>-->
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-2 p0">
+                                                    <a href="index.html">
+                                                        <i class="zmdi zmdi-balance"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="">
+                                                        <i class="pe-7s-home"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="news.html">
+                                                        <i class="pe-7s-monitor"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="gallery.html" class="current">
+                                                        <i class="pe-7s-photo-gallery"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="eazibizz.html">
+                                                        <i class="pe-7s-cash"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="" class="menuOpenBtn btn btn-link" data-target="#menuBar">
+                                                        <i class="pe-7s-menu"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </header>
                     </div>
                 </div>
+                
                 <div class="col-xs-12">
                     <div class="row">
                         <div id="contentContainer" class="--mobile-content --mobile-fluid">
@@ -56,7 +88,7 @@
                                 <div class="image-container">
                                     <img src="http://picsum.photos/360/360?image=19" alt="Place Name" />   
                                 </div>
-                                <div id="mobile-location-float" class="--mobile-location-float">
+                                <div class="--mobile-location-float p0">
                                     <div class="box --radius8">
                                         <div class="--content-header --mobile-fluid">
                                             <div class="content-inner">
@@ -91,7 +123,7 @@
 
                                 </div>
 
-                                <div class="--mobile-location-float">
+                                <div class="--mobile-location-float p0">
                                     <div class="content-header text-center --no-bg">
                                         <div class="--f"><span class="count-badge"><i class="zmdi zmdi-facebook"></i></span> <a href="javascript:void()"> Share</a></div>
                                         <div class="--t"><span class="count-badge"><i class="zmdi zmdi-twitter"></i></span> <a href="javascript:void()"> Share</a></div>
@@ -107,11 +139,38 @@
                                         <h5>Explore</h5>
                                         <span class="p0 m0"><small>Checkout places similar to this</small></span>
                                     </div>
-                                    <div class="slideshow-container slideshow">
-                                    
+                                    <div class="masonry">
+                                        <div class="grid-size"></div>
+                                        <div class="masonry-item">
+                                            <a href="location.html">
+                                                <img src="http://picsum.photos/120/160?image=1" class="image">
+                                            </a>
+                                        </div>
+                                        <div class="masonry-item">
+                                            <a href="location.html">
+                                                <img src="http://picsum.photos/120/160?image=2" class="image">
+                                            </a>
+                                        </div>
+                                        <div class="masonry-item">
+                                            <a href="location.html">
+                                                <img src="http://picsum.photos/120/160?image=3" class="image">
+                                            </a>
+                                        </div>
+                                        <div class="masonry-item">
+                                            <a href="location.html">
+                                                <img src="http://picsum.photos/120/160?image=4" class="image">
+                                            </a>
+                                        </div>
+                                            <div class="masonry-item">
+                                            <a href="location.html">
+                                                <img src="http://picsum.photos/120/160?image=5" class="image">
+                                            </a>
+                                        </div>
                                     </div>
 
-                                    <div class="--mobile-float-footer --mobile-fluid">
+                                    <div class="clearfix"></div>
+
+                                    <div class="--mobile-float-footer --mobile-fluid --mobile-bg-white p0">
                                         <div class="content-inner">
                                             <p class="m0 p0 text-center">&copy; 2018 destination Cross River</p>
                                         </div>
@@ -122,58 +181,12 @@
                     </div>
                 </div>
                 
-                <div class="--mobile-fixed-menubar --menubar-colored">
-                    <div class="--add-float">
-                        <a href="javascript:void()" class="btn btn-default textual"><i class="zmdi zmdi-plus"></i></a>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="row">
-                            <div class="col-xs-3 p0">
-                                <a href="">
-                                    <i class="zmdi zmdi-home"></i>
-                                    <span>Home</span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 p0">
-                                <a href="news.html">
-                                    <i class="zmdi zmdi-library"></i>
-                                    <span>Updates</span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 p0">
-                                <a href="places.html" class="current">
-                                    <i class="zmdi zmdi-landscape"></i>
-                                    <span>Places</span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 p0">
-                                <a href="people.html">
-                                    <i class="zmdi zmdi-accounts-outline"></i>
-                                    <span>People</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--<div class="app">
-                        <ul class="hs full">
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                        </ul>
-                    </div>-->
-                </div>
             </div>
 
-            <div id="sideBarMenu" class="--mobile-menu-top close">
-                <div class="header-opaque">
-                    <img src="assets/imgs/dcr-logo.png" alt="destination Cross River" />
-                    <button id="menuCloseBtn" class="--menu-close-btn"><i class="zmdi zmdi-close"></i></button>
-                </div>
+            <div id="menuBar" class="--mobile-menu-top close">
+                <button type="button" class="btn btn-block btn-default --menu-close-btn menuCloseBtn" data-target="#menuBar"><i class="zmdi zmdi-close-circle-o"></i></button>
                 <div class="nicescroll-box">
-                   <ul class="scroll" role="navigation">
+                    <ul class="scroll" role="navigation">
                         <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
                         <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
                         <li><a href="user-account.html"><i class="zmdi zmdi-account-o"></i> User Account</a></li>

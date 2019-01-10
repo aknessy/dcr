@@ -21,238 +21,266 @@
             <div class="row" style="min-height: 100%">
                 <div class="col-xs-12">
                     <div class="row">
-                        <header class="--mobile-layout-header --mobile-fluid">
-                            <div class="col-xs-1 p0">
-                                <a href="#" class="btn btn-link"><i class="zmdi zmdi-long-arrow-left"></i></a>
-                            </div>
-                            
-                            <div class="col-xs-10">
+                        <header id="header" class="--mobile-layout-header --mobile-fluid">
+                            <div class="col-xs-12">
                                 <div class="row">
-                                    <div class="--mobile-home-search">
+                                    <div class="--mobile-home-search --mobile-bg-gold">
                                         <form action="" class="form form-horizontal" method="post" data-ajax="true">
-                                            <div class="input-group input-group-sm">
-                                                <input type="text" class="form-control" placeholder="Search Destination Cross River" aria-describedby="Search Box">
-                                                <span class="input-group-btn">
-                                                    <button id="submitBtn" type="submit" class="btn btn-default" type="button"><span class="zmdi zmdi-search-for"></span></button>
-                                                </span>
-                                            </div>
+                                            <input type="text" class="form-control --mobile-input-override" placeholder="Search"
+                                                aria-describedby="Search Box">
                                         </form>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
-                            <div class="col-xs-1 p0">
-                                <a href="#" id="menuOpenBtn" class="btn btn-link" data-target="menuSidebar"><i class="zmdi zmdi-more"></i></a>
-                            </div> 
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="--mobile-fixed-menubar --menubar-colored --mobile-fluid">
+                                        <!--<div class="--add-float">
+                                            <a href="javascript:void()" class="btn btn-default textual"><i class="zmdi zmdi-plus"></i></a>
+                                        </div>-->
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-2 p0">
+                                                    <a href="index.html">
+                                                        <i class="zmdi zmdi-balance"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="">
+                                                        <i class="pe-7s-home"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="news.html">
+                                                        <i class="pe-7s-monitor"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="gallery.html" class="current">
+                                                        <i class="pe-7s-photo-gallery"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="eazibizz.html">
+                                                        <i class="pe-7s-cash"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-2 p0">
+                                                    <a href="" class="menuOpenBtn btn btn-link current" data-target="#menuBar">
+                                                        <i class="pe-7s-menu"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </header>
                     </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="row">
-                        <div id="container" class="masonry">
-                    
-                            <div class="grid-sizer"></div>
+                         <div id="contentContainer" class="--mobile-content --mobile-fluid">
+                            <div class="--mobile-content-inner">
+                                <div class="--mobile-location-album-float p0">
+                                    <div class="--home-card --mobile-bg-white">
+                                        <div class="--home-card-header">
+                                            <h4>Gallery
+                                                <div class="toolbar">
+                                                    <ul>
+                                                        <li><a href="javascript:void()"><i class="fa fa-angle-double-right"></i></a></li>
+                                                        <li>
+                                                            <a class="dropdown-toggle" href="javascript:void()" data-toggle="#peopleMenu"><i
+                                                                    class="fa fa-angle-down"></i></a>
+                                                            <ul id="peopleMenu" class="close mCustomScrollbar">
+                                                                <li><a href="people.html">Politics</a></li>
+                                                                <li><a href="people.html">Philantropist</a></li>
+                                                                <li><a href="people.html">Doctors</a></li>
+                                                                <li><a href="people.html">Nurses</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </h4>
+                                        </div>
 
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=10" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                        <div class="--home-card-body">
+                                            <div class="masonry">
+                                                <div class="grid-sizer"></div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=10" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=30" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=21" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=91" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=29" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=111" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=8" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=4" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=25" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=22" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=35" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=19" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=26" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=20" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=25" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=13" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=75" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="masonry-item">
+                                                    <img src="http://picsum.photos/120/160?image=11" class="image">
+                                                    <a class="overlay" href="#">
+                                                        <h3 class="title">Some title</h3>
+                                                        <div class="description">
+                                                            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=30" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=21" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=91" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=29" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=111" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=8" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=4" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=25" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=22" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=35" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=19" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=26" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=20" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=25" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=13" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=75" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <img src="http://picsum.photos/120/160?image=11" class="image">
-                                <a class="overlay" href="#">
-                                    <h3 class="title">Some title</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="--mobile-location-album-float">
-                            <div class="--mobile-float-footer --mobile-fluid">
-                                <div class="content-inner">
-                                    <p class="m0 p0 text-center">&copy; 2018 destination Cross River</p>
                                 </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
 
-                <div class="--mobile-fixed-menubar --menubar-colored">
-                    <div class="col-xs-12">
-                        <div class="row">
-                            <div class="col-xs-3 p0">
-                                <a href="">
-                                    <i class="zmdi zmdi-home"></i>
-                                    <span>Home</span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 p0">
-                                <a href="news.html">
-                                    <i class="zmdi zmdi-library"></i>
-                                    <span>Updates</span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 p0">
-                                <a href="places.html"=>
-                                    <i class="zmdi zmdi-landscape"></i>
-                                    <span>Places</span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 p0">
-                                <a href="people.html">
-                                    <i class="zmdi zmdi-accounts-outline"></i>
-                                    <span>People</span>
-                                </a>
+                                <div class="--mobile-location-album-float">
+                                    <div class="--mobile-float-footer --mobile-fluid">
+                                        <div class="content-inner">
+                                            <p class="m0 p0 text-center">&copy; 2018 destination Cross River</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -270,9 +298,9 @@
                         <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
                         <li><a href="user-account.html"><i class="zmdi zmdi-account-o"></i> User Account</a></li>
                         <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Market Places</a></li>
-                        <li><a href="places.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
+                        <li><a href="places.html"><i class="icon zmdi zmdi-collection-masonry-item"></i> Events</a></li>
                         <li><a href="schedule.html"><i class="zmdi zmdi-calendar"></i> Carnival Schedule</a></li>
-                        <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-item"></i> Gallery</a></li>
+                        <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-masonry-item"></i> Gallery</a></li>
                     </ul>
                 </div>
             </div>

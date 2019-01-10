@@ -13,12 +13,6 @@ $(document).ready(function(){
         }else if($(window).scrollTop() == 0) {
             $('header').removeClass('dcr-fixed-header');
         }
-        
-        if($(window).scrollTop() >= 4086){
-            $('header').removeClass('dcr-fixed-header');
-        }else if($(window).scrollTop() == 2043){
-            $('header').addClass('dcr-fixed-header');
-        }
     });
 
     /*window.addEventListener("scroll", function (event) {
@@ -95,5 +89,7 @@ $(document).ready(function(){
     $('div.dcr-card-text').each(function(i, e) {
         $clamp(e, { clamp: 3, useNativeClamp: false });
     });
+
+    $('.dcr-account-form').mCustomScrollbar();
 
 })

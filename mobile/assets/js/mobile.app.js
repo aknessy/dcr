@@ -8,7 +8,26 @@ $(function(){
     /**
      * 
      */
-    $('.nicescroll-box').niceScroll('.scroll', {cursorColor : 'red'})
+    $('.dropdown-toggle').on('click', function(e){
+        var target = $(this).data('toggle');
+        $(target).toggleClass('close open');
+        return false;
+    })
+
+    $('.menuOpenBtn').on('click', function(e){
+        var target = $(this).data('target');
+        $(target).toggleClass('close open');
+        return false;
+    })
+    $('.menuCloseBtn').on('click', function (e) {
+        var target = $(this).data('target');
+        $(target).removeClass('open').addClass('close');
+        return false;
+    })
+    /**
+     * 
+     */
+    $('.nicescroll-box').niceScroll('.scroll', {cursorColor : '#eeeeee'})
 
     /**
      * 
@@ -32,8 +51,8 @@ $(function(){
      * 
      */
     $('.rater').on('click', function(e){
-        $(this).parent().find('div.orphan').show();
-        return false;
+        $(this).closest('div.orphan').show();
+        e.preventDefault();
     })
 
     /* 1. Visualizing things on Hover - See next part for action on click */
@@ -100,53 +119,55 @@ $(window).on('load', function() {
 
 $(window).scroll(function() 
 {    
-    /*var scroll = $(window).scrollTop();
+    var scroll = $(window).scrollTop();
 
-    if (scroll >= 157) 
+    if (scroll >= 102) 
     {
-        $("#header").removeClass("unfixed").addClass('fixed');
+        $('#header').addClass('fixed');
     }else {
-        $("#header").removeClass('fixed').addClass('unfixed');
-    }*/
+        $("#header").removeClass('fixed')
+    }
 });
 
 /**
  * 
- */
+ *
 window.addEventListener('load', function(event)
 {
     if(document.querySelector("#menuOpenBtn"))
     {
         var menuOpenBtn = document.getElementById('menuOpenBtn');
-        menuOpenBtn.addEventListener('click', function()
+        menuOpenBtn.addEventListener('click', function(e)
         {
-            var target = document.getElementById('sideBarMenu');
+            var target = document.getElementById('menuBar');
             var targetElementClass = target.className;
             
             if(targetElementClass.indexOf('close') !== -1)
                 target.className = target.className.replace('close','open');
-        }
-        );
+
+            return false;
+        });
     }  
 
     if(document.querySelector("#menuCloseBtn"))
     {
         var menuCloseBtn = document.getElementById('menuCloseBtn');
-        menuCloseBtn.addEventListener('click', function()
+        menuCloseBtn.addEventListener('click', function(e)
         {
-            var target = document.getElementById('sideBarMenu');
+            var target = document.getElementById('menuBar');
             var targetElementClass = target.className;
             
             if(targetElementClass.indexOf('open') !== -1)
                 target.className = target.className.replace('open','close');
-        }
-        );
+
+            e.preventDefault();
+        });
     }  
 });
 
 
 /**
  * JSSOR SLIDER
- */
+ *
 var options = { $AutoPlay: 1};
-var jssor_1_slider_init = new $JssorSlider$("jssor_1", options);
+var jssor_1_slider_init = new $JssorSlider$("jssor_1", options);*/

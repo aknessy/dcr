@@ -24,9 +24,7 @@ body{
     background: #fdfbfb;
     color: #333333;
     font-family: 'Segoe UI', serif;
-    font-size: 13px;}  
-body#zoomed{
-    zoom: 90%}
+    font-size: 14px;}  
 h1,h2,h3,h4,h5,h6{
     font-weight: bold;
     font-family: 'Merriweather', serif;
@@ -123,24 +121,42 @@ h1,h2,h3,h4,h5,h6{
     display: block;
     float: left;
     padding: 16px;
-    font-size: 12px;
+    font-size: 14px;
     color: #f8f8f8;
     height: 54px;}
-.dcr-header .dcr-navigation li ul{
+.dcr-header .dcr-navigation li > ul{    
     display: none;
-    background-image: linear-gradient(to bottom right, rgb(203, 169, 111) 0%, rgb(221,184,119) 100%);
-    background-image: linear-gradient(rgb(203,169,111), rgb(221,184,119));
+    background-color: rgb(221,184,119);
     border: 1px solid rgba(204, 159, 80, 0.57);
     border-top: 0px none;
+    list-style: none;
     position: absolute;
     top: 100%;
-    left: 0;}
-.dcr-header.dcr-header.dcr-fixed-header .dcr-navigation li:not(.dcr-access) a{
+    left: 0;
+    padding:0px;
+    width: 220px;
+z-index: 10;}
+.dcr-header .dcr-navigation li > ul > li{
+    float: none;}
+.dcr-header .dcr-navigation li > ul > li > a{
+    background-image: none;
+    display: block;
+    padding: 7px 0 7px 15px;
+    width: 100%;
+    height: auto;
+    text-decoration: none;}
+.dcr-header .dcr-navigation li > ul > li:hover > a{
+    outline: none;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.7);}
+.dcr-header .dcr-navigation li:hover > ul{
+    display: block;}
+.dcr-header.dcr-header.dcr-fixed-header .dcr-navigation li:not(.dcr-access) > a{
     height: 60px;
     padding: 16px;}
-.dcr-header .dcr-navigation li:not(.dcr-access):hover a,
-.dcr-header .dcr-navigation li.active:not(.dcr-access) a,
-.dcr-header .dcr-navigation li.active:not(.dcr-access):hover a{
+.dcr-header .dcr-navigation li:not(.dcr-access):hover > a,
+.dcr-header .dcr-navigation li.active:not(.dcr-access) > a,
+.dcr-header .dcr-navigation li.active:not(.dcr-access):hover > a{
     background-image: linear-gradient(to bottom right, rgba(203, 169, 111,.9) 0%, rgba(221,184,119,.9) 100%);
     background-image: linear-gradient(rgba(203,169,111,.39), rgba(221,184,119,.9));
     text-decoration:  none;}
@@ -183,7 +199,9 @@ h1,h2,h3,h4,h5,h6{
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 7px solid rgb(221,184,119);}
-.dcr-header .dcr-navigation .dcr-account:hover{
+.dcr-header .dcr-navigation .dcr-access:hover a{
+    background-color: rgb(221,184,119);
+    background-image: linear-gradient(rgb(203,169,111), rgb(221,184,119));
     text-decoration: none;
     outline: none;
     color: #222222;}
@@ -521,7 +539,8 @@ h1,h2,h3,h4,h5,h6{
 .dcr-subtitle p{
     font-family: 'Merriweather', sans-serif;
     border-bottom: 1px solid #dededf;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+    padding-bottom: 8px;}
 .dcr-places{
     clear: both;
     display: block;
@@ -855,6 +874,26 @@ h1,h2,h3,h4,h5,h6{
     margin-right: 5px;
     line-height: 18px;
     position: relative;}
+.dcr-account-wrapper{
+    clear: both;
+    background-image: url('../imgs/account-bg.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 100px 0;
+    height: 600px;
+    box-shadow: 3px 9px 9px 4px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 3px 9px 9px 4px rgba(0,0,0,0.4);}
+.dcr-account-wrapper .dcr-account-inner{
+    padding: 20px 0;}
+.dcr-account-wrapper .dcr-account-inner .dcr-account-form {
+    height: 599px;}
+.dcr-account-wrapper .dcr-account-form form{
+    padding: 10px 15px;}
+.dcr-account-wrapper .dcr-account-form label{
+    color: #8b8b8b;
+    text-align: left;
+    font-weight: normal;}
 
 /**
 * HELPER CLASSES
@@ -961,3 +1000,15 @@ h1,h2,h3,h4,h5,h6{
 @media (min-width: 700px) {
     .svg--sm {
         display: none;}}
+@media all and (max-width: 320px){
+    .dcr-account-wrapper{
+        margin: 30px 0;
+        background-image: none;
+        background: -moz-radial-gradient(center, ellipse cover, rgba(13, 53, 131, 1) 0%, rgba(18, 46, 98,1) 45%, rgba(20,35,64,1) 100%)!important; /* ff3.6+ */
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(13, 53, 131, 1)), color-stop(45%, rgba(18, 46, 98, 1)), color-stop(100%, rgba(20,35,64,1)))!important; /* safari4+,chrome */
+        background:-webkit-radial-gradient(center, ellipse cover, rgba(13, 53, 131,1) 0%, rgba(18, 46, 98, 1) 45%, rgba(20,35,64,1) 100%)!important; /* safari5.1+,chrome10+ */
+        background: -o-radial-gradient(center, ellipse cover, rgba(13, 53, 131,1) 0%, rgba(18, 46, 98, 1) 45%, rgba(20,35,64,1) 100%)!important; /* opera 11.10+ */
+        background: -ms-radial-gradient(center, ellipse cover, rgba(13, 53, 131,1) 0%, rgba(18, 46, 98, 1) 45%, rgba(20,35,64,1) 100%)!important; /* ie10+ */
+        background: radial-gradient(ellipse at center, rgba(13, 53, 131,1) 0%, rgba(18, 46, 98, 1) 45%, rgba(20,35,64,1) 100%)!important; /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d3583', endColorstr='#142236',GradientType=0 )!important; /* ie6-9 */}
+}

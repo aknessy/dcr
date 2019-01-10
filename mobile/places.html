@@ -1,116 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Destination CRS | Places</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Thasadith" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/gallery.layout.css" />
-        <link rel="stylesheet" href="assets/css/mobile.layout.css" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Destination CRS | Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/masonry.min.js"></script>  
-        <script src="assets/js/jquery.nicescroll.min.js"></script>
-        
-    </head>
-    <body>
-        <div class="container --mobile-wrapper gradient-steel-img">
-            <div data-role="header" class="--mobile-layout-header --mobile-header-bg --mobile-fluid unfixed">
-                <div class="--mobile-fluid">
-                    <a href="home.html" class="pull-left"><span>destination</span> Cross River</a>
-                    <div class="dropdown pull-right">
-                        <button id="menuOpenBtn" class="btn btn-link dropdown-toggle" data-target="menuSidebar" type="button" aria-haspopup="true" aria-expanded="true">
-                            <span class="zmdi zmdi-apps" style="text-shadow:none;color:#fff"></span>
-                        </button>
-                    </div>
-                    <div class="--mobile-home-search">
-                        <form action="" class="form form-horizontal" method="post" data-ajax="true">
-                            <div class="input-group input-group-sm">
-                                <input type="text" class="form-control --mobile-input-override" placeholder="Search Carnival Gallery" aria-describedby="Basic Search">
-                                <span class="input-group-btn">
-                                    <button id="submitBtn" type="submit" class="btn btn-gold" type="button"><span class="zmdi zmdi-search-for"></span></button>
-                                </span>
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
+    <link rel="stylesheet" href="./assets/css/gallery.layout.css" />
+    <link rel="stylesheet" href="./assets/css/h-scroll.css" />
+    <link rel="stylesheet" href="assets/css/mobile.layout.css" />
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/masonry.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container --mobile-wrapper">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <header id="header" class="--mobile-layout-header --mobile-fluid">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="--mobile-home-search --mobile-bg-gold">
+                                    <form action="" class="form form-horizontal" method="post" data-ajax="true">
+                                        <input type="text" class="form-control --mobile-input-override" placeholder="Search"
+                                            aria-describedby="Search Box">
+                                    </form>
+                                </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="--mobile-switch-view">
-                        <nav aria-label="breadcrumb" class="pull-left">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="home.html"><i class="zmdi zmdi-home"></i></a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Places</li>
-                            </ol>
-                        </nav>
-                        <div class="pull-right --mobile-switches">
-                            <a id="carnivalSortBtn" href="javascript:void()" data-input="#carnivalSort"><i class="zmdi zmdi-pin"></i> Find a place</a>
-                            <form action="" method="post" style="width: 0;height:0;opacity:0">
-                                <input id="carnivalSort" type="hidden" name="carnival-sort" value="" /> 
-                            </form>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="--mobile-fixed-menubar --menubar-colored --mobile-fluid">
+                                    <!--<div class="--add-float">
+                                        <a href="javascript:void()" class="btn btn-default textual"><i class="zmdi zmdi-plus"></i></a>
+                                    </div>-->
+                                    <div class="col-xs-12">
+                                        <div class="row">
+                                            <div class="col-xs-2 p0">
+                                                <a href="index.html">
+                                                    <i class="zmdi zmdi-balance"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2 p0">
+                                                <a href="">
+                                                    <i class="pe-7s-home"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2 p0">
+                                                <a href="news.html">
+                                                    <i class="pe-7s-monitor"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2 p0">
+                                                <a href="gallery.html" class="current">
+                                                    <i class="pe-7s-photo-gallery"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2 p0">
+                                                <a href="eazibizz.html">
+                                                    <i class="pe-7s-cash"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-2 p0">
+                                                <a href="" class="menuOpenBtn btn btn-link current" data-target="#menuBar">
+                                                    <i class="pe-7s-menu"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="row">
+                    <div id="contentContainer" class="--mobile-content --mobile-fluid">
+                        <div class="--mobile-content-inner">
+                            <div class="--mobile-location-album-float p0">
+                                <div class="--home-card --mobile-bg-white">
+                                    <div class="--home-card-header">
+                                        <h4>Places
+                                            <div class="toolbar">
+                                                <ul>
+                                                    <li><a href="javascript:void()"><i class="fa fa-angle-double-right"></i></a></li>
+                                                    <li>
+                                                        <a class="dropdown-toggle" href="javascript:void()" data-toggle="#peopleMenu"><i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <ul id="peopleMenu" class="close mCustomScrollbar">
+                                                            <li><a href="location.html">Politics</a></li>
+                                                            <li><a href="location.html">Philantropist</a></li>
+                                                            <li><a href="location.html">Doctors</a></li>
+                                                            <li><a href="location.html">Nurses</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </h4>
+                                    </div>
+
+                                    <div class="--home-card-body">
+                                        <div class="masonry">
+                                            <div class="grid-sizer"></div>
+                                            <div class="masonry-item">
+                                                <a href="location.html">
+                                                    <img src="http://picsum.photos/120/160?image=1" class="image">
+                                                </a>
+                                            </div>
+                                            <div class="masonry-item">
+                                                <a href="location.html">
+                                                    <img src="http://picsum.photos/120/160?image=2" class="image">
+                                                </a>
+                                            </div>
+                                            <div class="masonry-item">
+                                                <a href="location.html">
+                                                    <img src="http://picsum.photos/120/160?image=3" class="image">
+                                                </a>
+                                            </div>
+                                            <div class="masonry-item">
+                                                <a href="location.html">
+                                                    <img src="http://picsum.photos/120/160?image=4" class="image">
+                                                </a>
+                                            </div>
+                                             <div class="masonry-item">
+                                                <a href="location.html">
+                                                    <img src="http://picsum.photos/120/160?image=5" class="image">
+                                                </a>
+                                            </div>
+                                             <div class="masonry-item">
+                                                <a href="location.html">
+                                                    <img src="http://picsum.photos/120/160?image=6" class="image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div> 
-            </div>
-            <div id="container" class="masonry">
-                <div id="sideBarMenu" class="--mobile-menu-top close">
-                    <div class="header-opaque">
-                        <img src="assets/imgs/dcr-logo.png" alt="destination Cross River" />
-                        <button id="menuCloseBtn" class="--menu-close-btn"><i class="zmdi zmdi-close"></i></button>
-                    </div>
-                    <div class="nicescroll-box">
-                        <ul class="scroll" role="navigation">
-                            <li><a href="home.html"><i class="zmdi zmdi-home"></i> Home</a></li>
-                            <li><a href="updates.html"><i class="zmdi zmdi-account-o"></i> Updates</a></li>
-                            <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
-                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
-                            <li><a href="register.html"><i class="zmdi zmdi-account-o"></i> Register</a></li>
-                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Market Places</a></li>
-                            <li><a href="people.html"><i class="icon zmdi zmdi-collection-item"></i> People</a></li>
-                            <li><a href="places.html"><i class="icon zmdi zmdi-collection-item"></i> Places</a></li>
-                            <li><a href="places.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
-                            <li><a href="schedule.html"><i class="zmdi zmdi-calendar"></i> Carnival Schedule</a></li>
-                            <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-item"></i> Carnival Gallery</a></li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="grid-sizer"></div>
-    
-                <div class="item">
-                    <a href="location.html">
-                        <img src="http://picsum.photos/120/160?image=10" class="image">
-                    </a>
-                </div>
-                <div class="item">                    
-                    <a href="location.html">
-                        <img src="http://picsum.photos/120/160?image=30" class="image">
-                    </a>
-                </div>
-                <div class="item">                    
-                    <a href="location.html">
-                       <img src="http://picsum.photos/120/160?image=21" class="image">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="location.html">
-                        <img src="http://picsum.photos/120/160?image=32" class="image">
-                    </a>
-                </div>
-                <div class="item">                    
-                    <a href="location.html">
-                        <img src="http://picsum.photos/120/160?image=25" class="image">
-                    </a>
-                </div>
-                    <div class="item">                    
-                        <a href="location.html">
-                            <img src="http://picsum.photos/120/160?image=22" class="image">
-                        </a>
-                    </div>
                 </div>
             </div>
-        
-        <script src="./assets/js/clamp.min.js"></script>
-        <script src="assets/js/mobile.app.js"></script>
-    </body>
-    </html>
+        </div>
+
+        <div id="menuBar" class="--mobile-menu-top close">
+            <button type="button" class="btn btn-block btn-default --menu-close-btn menuCloseBtn" data-target="#menuBar"><i class="zmdi zmdi-close-circle-o"></i></button>
+            <div class="nicescroll-box">
+                <ul class="scroll" role="navigation">
+                    <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
+                    <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
+                    <li><a href="user-account.html"><i class="zmdi zmdi-account-o"></i> User Account</a></li>
+                    <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Market Places</a></li>
+                    <li><a href="places.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
+                    <li><a href="schedule.html"><i class="zmdi zmdi-calendar"></i> Carnival Schedule</a></li>
+                    <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-item"></i> Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/clamp.min.js"></script>
+    <script src="assets/js/mobile.app.js"></script>
+</body>
+
+</html>
