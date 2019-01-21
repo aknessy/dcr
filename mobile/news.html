@@ -1,200 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Destination CRS | Updates</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Thasadith" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/h-scroll.css" />
-        <link rel="stylesheet" href="./assets/css/gallery.layout.css" />
-        <link rel="stylesheet" href="./assets/css/mobile.layout.css" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Destination CRS | Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="./assets/js/jquery.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGoHl8S1ySCZTjuaVv165558QzCT4ipT0"></script>
-        <script src="./assets/js/jquery.googlemap.js"></script> 
-        <script src="./assets/js/jquery.nicescroll.min.js"></script>
-        <script src="./assets/js/jssor.slider.min.js"></script>
-        
-    </head>
-    <body>
-        <div class="container --mobile-wrapper pb40">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="row">
-                        <header id="header" class="--mobile-layout-header --mobile-fluid">                            
-                            <div class="col-xs-12">
-                                <div class="row">
-                                    <div class="--mobile-home-search --mobile-bg-gold">
-                                        <form action="" class="form form-horizontal" method="post" data-ajax="true">
-                                            <input type="text" class="form-control --mobile-input-override" placeholder="Search" aria-describedby="Search Box">
-                                        </form>
-                                    </div>
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
+    <link rel="stylesheet" href="./assets/css/gallery.layout.css" />
+    <link rel="stylesheet" href="./assets/css/h-scroll.css" />
+    <link rel="stylesheet" href="assets/css/mobile.layout.css" />
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/masonry.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container --mobile-wrapper">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <header id="header" class="--mobile-layout-header --mobile-fluid --mobile-bg-gold">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="--mobile-home-search">
+                                    <form action="" class="form form-horizontal" method="post" data-ajax="true">
+                                        <input type="text" class="form-control --mobile-input-override" placeholder="Search"
+                                            aria-describedby="Search Box">
+                                    </form>
                                 </div>
-                                
                             </div>
-                            <div class="col-xs-12">
-                                <div class="row">
-                                    <div class="--mobile-fixed-menubar --menubar-colored --mobile-fluid">
-                                        <!--<div class="--add-float">
+
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="--mobile-fixed-menubar --mobile-fluid">
+                                    <!--<div class="--add-float">
                                             <a href="javascript:void()" class="btn btn-default textual"><i class="zmdi zmdi-plus"></i></a>
                                         </div>-->
-                                        <div class="col-xs-12">
-                                            <div class="row">
-                                                <div class="col-xs-2 p0">
-                                                    <a href="index.html">
-                                                        <i class="zmdi zmdi-balance"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-2 p0">
-                                                    <a href="">
-                                                        <i class="pe-7s-home"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-2 p0">
-                                                    <a href="news.html">
-                                                        <i class="pe-7s-monitor"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-2 p0">
-                                                    <a href="gallery.html">
-                                                        <i class="pe-7s-photo-gallery"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-2 p0">
-                                                    <a href="eazibizz.html">
-                                                        <i class="pe-7s-cash"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-2 p0">
-                                                    <a href="" class="menuOpenBtn btn btn-link current" data-target="#menuBar">
-                                                        <i class="pe-7s-menu"></i>
-                                                    </a>
-                                                </div>
+                                    <div class="col-xs-12">
+                                        <div class="row">
+                                            <div class="col-xs-3 p0">
+                                                <a href="index.html">
+                                                    <i class="zmdi zmdi-balance"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-3 p0">
+                                                <a href="">
+                                                    <i class="pe-7s-home"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-3 p0">
+                                                <a href="news.html">
+                                                    <i class="pe-7s-monitor"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-3 p0">
+                                                <a href="" class="menuOpenBtn btn btn-link current" data-target="#menuBar">
+                                                    <i class="pe-7s-menu"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </header>
-                    </div>
+                        </div>
+                    </header>
                 </div>
-                <div class="col-xs-12">
-                    <div class="row">
-                        <div id="contentContainer" class="--mobile-content --mobile-fluid">
-                            <div class="--mobile-content-inner mt40">
-                                <div class="--mobile-location-float">
-                                    <div class="--mobile-update-preference w100">
-                                        <div class="box --themed-twitter">
-                                            <div class="col-xs-3">
-                                                <a href="javascript:void()" class="preference-item current">
-                                                    <i class="zmdi zmdi-3d-rotation"></i>
-                                                    <span>General</span>
-                                                </a>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="row">
+                    <div id="contentContainer" class="--mobile-content --mobile-fluid">
+                        <div class="--mobile-content-inner">
+                            <div class="--mobile-location-album-float pt0 pb40">
+                                <div class="--home-card --mobile-bg-white">
+                                    <div class="--home-card-header">
+                                        <h4 class="text-uppercase">News/Updates
+                                            <div class="toolbar">
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-toggle" href="javascript:void()" data-toggle="#peopleMenu">
+                                                            <i class="fa fa-angle-double-right"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="col-xs-3">
-                                                <a href="javascript:void()" class="preference-item">
-                                                    <i class="zmdi zmdi-hospital"></i>
-                                                    <span>Health</span>
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-3">
-                                                <a href="javascript:void()" class="preference-item">
-                                                    <i class="zmdi zmdi-flag"></i>
-                                                    <span>Politics</span>
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-3">
-                                                <a href="javascript:void()" class="preference-item">
-                                                    <i class="zmdi zmdi-case"></i>
-                                                    <span>Business</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        </h4>
                                     </div>
+                                    <div class="--home-card-body">
+                                        <div class="--home-card-description description">
+                                            <div class="--scrollable-container">
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Politics 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                    <div class="clearfix"></div>
-
-                                    <div class="--mobile-envelope">
-                                        <div class="box --radius8">
-                                            <div class="--image-">
-                                                <img src="http://picsum.photos/120/160?image=88" class="image" />
-                                            </div>
-                                            <div class="--content-header --mobile-fluid">
-                                                <div class="content-inner">
-                                                    <h4>Millineum Park</h4>
-                                                    <div class="date-time">
-                                                        <span class="pull-left"><i class="zmdi zmdi-calendar"></i> 4th January, 2018</span>
-                                                        <span class="pull-right"><i class="zmdi zmdi-time"></i> 11:09am</span>
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Politics 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Politics 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Politics 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="--content-body --mobile-fluid">
-                                                <div class="content-inner nicescroll-box">
-                                                    <div class="--mobile-fluid scroll description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat ante sem, quis suscipit enim faucibus sit amet. Pellentesque ac ante at mi luctus dapibus rutrum vel nunc. Curabitur dapibus libero ac dui ultrices, ac fermentum sem malesuada. Cras ultricies at tortor at ultrices. Nullam congue sapien ligula. Nunc varius a sem ac fringilla. Cras eu congue nibh. Suspendisse porttitor, nulla ut fermentum pellentesque, ante ante aliquam dui, ac suscipit enim purus ut est.</p>
+
+                                            <div class="--home-card-footer --mobile-fluid">
+                                                <a href="movies.html" class="btn --mobile-bg-navy pull-right">View all <i
+                                                        class="fa fa-paper-plane-o"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="--home-card-description description">
+                                            <div class="--home-inner-header">
+                                                <h5>Sports
+                                                    <div class="toolbar">
+                                                        <ul>
+                                                            <li><a href="news.html/politics"><i class="fa fa-angle-double-right"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </h5>
+                                            </div>
+                                            <div class="--scrollable-container">
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Sports 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Sports 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Sports 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="--content-footer --mobile-fluid --themed-twitter">
-                                                <a href="javascript:void()" title="Comment" data-toggle="tooltip" data-placement="top">
-                                                    <i class="zmdi zmdi-comment-dots"></i></a>
-                                                <a href="javascript:void()" title="Like This" data-toggle="tooltip" data-placement="top">
-                                                    <i class="zmdi zmdi-thumb-up"></i></a>
-                                                <a href="javascript:void()" title="Read" data-toggle="tooltip" data-placement="top">
-                                                    <i class="zmdi zmdi-more"></i></a>
+
+                                            <div class="--home-card-footer --mobile-fluid">
+                                                <a href="movies.html" class="btn --mobile-bg-navy pull-right">View all <i
+                                                        class="fa fa-paper-plane-o"></i></a>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="--mobile-location-album-float">
-                                    <div class="header">
-                                        <h5>TRENDING</h5>
-                                    </div>
-                                    <div class="app">
-                                        <ul class="hs full">
-                                            <li class="item">test</li>
-                                            <li class="item">test</li>
-                                            <li class="item">test</li>
-                                            <li class="item">test</li>
-                                            <li class="item">test</li>
-                                            <li class="item">test</li>
-                                        </ul>
-                                    </div>
+                                        <div class="--home-card-description description">
+                                            <div class="--home-inner-header">
+                                                <h5>Business
+                                                    <div class="toolbar">
+                                                        <ul>
+                                                            <li><a href="news.html/politics"><i class="fa fa-angle-double-right"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </h5>
+                                            </div>
+                                            <div class="--scrollable-container">
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Business 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                    <div class="--mobile-float-footer --mobile-fluid">
-                                        <div class="content-inner">
-                                            <p class="m0 p0 text-center">&copy; 2018 destination Cross River</p>
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Business 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="--scrollable">
+                                                    <div class="--home-inner-body">
+                                                        <div class="content-img-container">
+                                                            <img src="http://picsum.photos/220/220?image=100" alt="Business 1" />
+                                                        </div>
+                                                        <div class="--mobile-news">
+                                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="--home-card-footer --mobile-fluid">
+                                                <a href="movies.html" class="btn --mobile-bg-navy pull-right">View all <i
+                                                        class="fa fa-paper-plane-o"></i></a>
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
+                            </div>
 
+                            <div class="--mobile-location-album-float">
+                                <div class="--mobile-float-footer --mobile-fluid">
+                                    <div class="content-inner">
+                                        <p class="m0 p0 text-center">&copy; 2018 destination Cross River</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="menuBar" class="--mobile-menu-top close">
-                <button type="button" class="btn btn-block btn-default --menu-close-btn menuCloseBtn" data-target="#menuBar"><i class="zmdi zmdi-close-circle-o"></i></button>
+        </div>
+
+        <div id="menuBar" class="--mobile-menu-top --mobile-bg-navy close">
+            <button type="button" class="btn --mobile-bg-navy --menu-close-btn menuCloseBtn" data-target="#menuBar"><i class="zmdi zmdi-close-circle-o"></i></button>
+            <div class="--mobile-menu-header --mobile-fluid">
+                <div class="--photo-wrapper --mobile-fluid">
+                     <img src="assets/imgs/sidebar-topmenu-bg.png" alt="Cover Photo" />
+                    <div class="--profile-img avatar avatar-f"></div>
+                </div>
+            </div>
+            <div class="content-inner --mobile-fluid">
                 <div class="nicescroll-box">
                     <ul class="scroll" role="navigation">
                         <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
                         <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
-                        <li><a href="user-account.html"><i class="zmdi zmdi-account-o"></i> User Account</a></li>
-                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Market Places</a></li>
-                        <li><a href="places.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
-                        <li><a href="schedule.html"><i class="zmdi zmdi-calendar"></i> Carnival Schedule</a></li>
+                        <li><a href="places.html"><i class="zmdi zmdi-headset-mic"></i> Places</a></li>
+                        <li><a href="people.html"><i class="zmdi zmdi-headset-mic"></i> People</a></li> 
+                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Healthcare</a></li>
+                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Accomodation</a></li>
+                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Transportation</a></li>
+                        <li><a href="events.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
                         <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-item"></i> Gallery</a></li>
                     </ul>
                 </div>
             </div>
+            <div class="--mobile-menu-footer --mobile-bg-gold">
+                <div class="col-xs-4 p0">
+                    <a href="profile.html"><i class="zmdi zmdi-account"></i></a>
+                </div>
+                <div class="col-xs-4 p0">
+                    <a href="tour-map.html"><i class="zmdi zmdi-pin-drop"></i></a>
+                </div>
+                <div class="col-xs-4 p0">
+                    <a href="settings.html"><i class="zmdi zmdi-settings"></i></a>
+                </div>
+            </div>
         </div>
 
-        <script src="assets/js/clamp.min.js"></script>
-        <script src="assets/js/mobile.app.js"></script>
-    </body>
+    </div>
+
+    <script src="./assets/js/clamp.min.js"></script>
+    <script src="assets/js/mobile.app.js"></script>
+</body>
+
 </html>

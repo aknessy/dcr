@@ -21,51 +21,38 @@
             <div class="row" style="min-height: 100%">
                 <div class="col-xs-12">
                     <div class="row">
-                        <header id="header" class="--mobile-layout-header --mobile-fluid">
+                        <header id="header" class="--mobile-layout-header --mobile-fluid --mobile-bg-gold">                            
                             <div class="col-xs-12">
                                 <div class="row">
-                                    <div class="--mobile-home-search --mobile-bg-gold">
+                                    <div class="--mobile-home-search">
                                         <form action="" class="form form-horizontal" method="post" data-ajax="true">
-                                            <input type="text" class="form-control --mobile-input-override" placeholder="Search"
-                                                aria-describedby="Search Box">
+                                            <input type="text" class="form-control --mobile-input-override" placeholder="Search" aria-describedby="Search Box">
                                         </form>
                                     </div>
                                 </div>
+                                
                             </div>
                             <div class="col-xs-12">
                                 <div class="row">
-                                    <div class="--mobile-fixed-menubar --menubar-colored --mobile-fluid">
-                                        <!--<div class="--add-float">
-                                            <a href="javascript:void()" class="btn btn-default textual"><i class="zmdi zmdi-plus"></i></a>
-                                        </div>-->
+                                    <div class="--mobile-fixed-menubar --mobile-fluid">
                                         <div class="col-xs-12">
                                             <div class="row">
-                                                <div class="col-xs-2 p0">
+                                                <div class="col-xs-3 p0">
                                                     <a href="index.html">
                                                         <i class="zmdi zmdi-balance"></i>
                                                     </a>
                                                 </div>
-                                                <div class="col-xs-2 p0">
+                                                <div class="col-xs-3 p0">
                                                     <a href="">
                                                         <i class="pe-7s-home"></i>
                                                     </a>
                                                 </div>
-                                                <div class="col-xs-2 p0">
+                                                <div class="col-xs-3 p0">
                                                     <a href="news.html">
                                                         <i class="pe-7s-monitor"></i>
                                                     </a>
                                                 </div>
-                                                <div class="col-xs-2 p0">
-                                                    <a href="gallery.html" class="current">
-                                                        <i class="pe-7s-photo-gallery"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-2 p0">
-                                                    <a href="eazibizz.html">
-                                                        <i class="pe-7s-cash"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-2 p0">
+                                                <div class="col-xs-3 p0">
                                                     <a href="" class="menuOpenBtn btn btn-link current" data-target="#menuBar">
                                                         <i class="pe-7s-menu"></i>
                                                     </a>
@@ -287,21 +274,39 @@
                 </div>
             </div>
 
-            <div id="sideBarMenu" class="--mobile-menu-top close">
-                <div class="header-opaque">
-                    <img src="assets/imgs/dcr-logo.png" alt="destination Cross River" />
-                    <button id="menuCloseBtn" class="--menu-close-btn"><i class="zmdi zmdi-close"></i></button>
+            <div id="menuBar" class="--mobile-menu-top --mobile-bg-navy close">
+                <button type="button" class="btn --mobile-bg-navy --menu-close-btn menuCloseBtn" data-target="#menuBar"><i class="zmdi zmdi-close-circle-o"></i></button>
+                <div class="--mobile-menu-header --mobile-fluid">
+                    <div class="--photo-wrapper --mobile-fluid">
+                         <img src="assets/imgs/sidebar-topmenu-bg.png" alt="Cover Photo" />
+                        <div class="--profile-img avatar avatar-f"></div>
+                    </div>
                 </div>
-                <div class="nicescroll-box">
-                    <ul class="scroll" role="navigation">
-                        <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
-                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
-                        <li><a href="user-account.html"><i class="zmdi zmdi-account-o"></i> User Account</a></li>
-                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Market Places</a></li>
-                        <li><a href="places.html"><i class="icon zmdi zmdi-collection-masonry-item"></i> Events</a></li>
-                        <li><a href="schedule.html"><i class="zmdi zmdi-calendar"></i> Carnival Schedule</a></li>
-                        <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-masonry-item"></i> Gallery</a></li>
-                    </ul>
+                <div class="content-inner --mobile-fluid">
+                    <div class="nicescroll-box">
+                        <ul class="scroll" role="navigation">
+                            <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
+                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
+                            <li><a href="places.html"><i class="zmdi zmdi-headset-mic"></i> Places</a></li>
+                            <li><a href="people.html"><i class="zmdi zmdi-headset-mic"></i> People</a></li> 
+                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Healthcare</a></li>
+                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Accomodation</a></li>
+                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Transportation</a></li>
+                            <li><a href="events.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
+                            <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-item"></i> Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="--mobile-menu-footer --mobile-bg-gold">
+                    <div class="col-xs-4 p0">
+                        <a href="profile.html"><i class="zmdi zmdi-account"></i></a>
+                    </div>
+                    <div class="col-xs-4 p0">
+                        <a href="tour-map.html"><i class="zmdi zmdi-pin-drop"></i></a>
+                    </div>
+                    <div class="col-xs-4 p0">
+                        <a href="settings.html"><i class="zmdi zmdi-settings"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

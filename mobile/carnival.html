@@ -20,28 +20,50 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="row">
-                        <header id="header" class="--mobile-layout-header --mobile-fluid">
-                            <div class="col-xs-1 p0">
-                                <a href="#" class="btn btn-link"><i class="zmdi zmdi-long-arrow-left"></i></a>
-                            </div>
-                            
-                            <div class="col-xs-10">
+                        <header id="header" class="--mobile-layout-header --mobile-fluid --mobile-bg-gold">                            
+                            <div class="col-xs-12">
                                 <div class="row">
                                     <div class="--mobile-home-search">
                                         <form action="" class="form form-horizontal" method="post" data-ajax="true">
-                                            <div class="input-group input-group-sm">
-                                                <input type="text" class="form-control" placeholder="Search Destination Cross River" aria-describedby="Search Box">
-                                                <span class="input-group-btn">
-                                                    <button id="submitBtn" type="submit" class="btn btn-default" type="button"><span class="zmdi zmdi-search-for"></span></button>
-                                                </span>
-                                            </div>
+                                            <input type="text" class="form-control --mobile-input-override" placeholder="Search" aria-describedby="Search Box">
                                         </form>
                                     </div>
-                                </div> 
+                                </div>
+                                
                             </div>
-                            <div class="col-xs-1 p0">
-                                <a href="#" id="menuOpenBtn" class="btn btn-link" data-target="menuSidebar"><i class="zmdi zmdi-more"></i></a>
-                            </div> 
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="--mobile-fixed-menubar --mobile-fluid">
+                                        <!--<div class="--add-float">
+                                            <a href="javascript:void()" class="btn btn-default textual"><i class="zmdi zmdi-plus"></i></a>
+                                        </div>-->
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-3 p0">
+                                                    <a href="index.html">
+                                                        <i class="zmdi zmdi-balance"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3 p0">
+                                                    <a href="" class="current">
+                                                        <i class="pe-7s-home"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3 p0">
+                                                    <a href="news.html">
+                                                        <i class="pe-7s-monitor"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3 p0">
+                                                    <a href="" class="menuOpenBtn btn btn-link" data-target="#menuBar">
+                                                        <i class="pe-7s-menu"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </header>
                     </div>
                 </div>
@@ -89,67 +111,41 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="--mobile-fixed-menubar --menubar-colored">
-                    <!--<div class="--add-float">
-                        <a href="javascript:void()" class="btn btn-default textual"><i class="zmdi zmdi-plus"></i></a>
-                    </div>-->
-                    <div class="col-xs-12">
-                        <div class="row">
-                            <div class="col-xs-3 p0">
-                                <a href="">
-                                    <i class="zmdi zmdi-home"></i>
-                                    <span>Home</span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 p0">
-                                <a href="news.html">
-                                    <i class="zmdi zmdi-library"></i>
-                                    <span>Updates</span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 p0">
-                                <a href="places.html">
-                                    <i class="zmdi zmdi-landscape"></i>
-                                    <span>Places</span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 p0">
-                                <a href="people.html">
-                                    <i class="zmdi zmdi-accounts-outline"></i>
-                                    <span>People</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--<div class="app">
-                        <ul class="hs full">
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                            <li class="item">test</li>
-                        </ul>
-                    </div>-->
-                </div>
             </div>
 
-            <div id="sideBarMenu" class="--mobile-menu-top close">
-                <div class="header-opaque">
-                    <img src="assets/imgs/dcr-logo.png" alt="destination Cross River" />
-                    <button id="menuCloseBtn" class="--menu-close-btn"><i class="zmdi zmdi-close"></i></button>
+            <div id="menuBar" class="--mobile-menu-top --mobile-bg-navy close">
+                <button type="button" class="btn --mobile-bg-navy --menu-close-btn menuCloseBtn" data-target="#menuBar"><i class="zmdi zmdi-close-circle-o"></i></button>
+                <div class="--mobile-menu-header --mobile-fluid">
+                    <div class="--photo-wrapper --mobile-fluid">
+                         <img src="assets/imgs/sidebar-topmenu-bg.png" alt="Cover Photo" />
+                        <div class="--profile-img avatar avatar-f"></div>
+                    </div>
                 </div>
-                <div class="nicescroll-box">
-                    <ul class="scroll" role="navigation">
-                        <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
-                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
-                        <li><a href="user-account.html"><i class="zmdi zmdi-account-o"></i> User Account</a></li>
-                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Market Places</a></li>
-                        <li><a href="places.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
-                        <li><a href="schedule.html"><i class="zmdi zmdi-calendar"></i> Carnival Schedule</a></li>
-                        <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-item"></i> Gallery</a></li>
-                    </ul>
+                <div class="content-inner --mobile-fluid">
+                    <div class="nicescroll-box">
+                        <ul class="scroll" role="navigation">
+                            <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
+                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
+                            <li><a href="places.html"><i class="zmdi zmdi-headset-mic"></i> Places</a></li>
+                            <li><a href="people.html"><i class="zmdi zmdi-headset-mic"></i> People</a></li> 
+                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Healthcare</a></li>
+                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Accomodation</a></li>
+                            <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Transportation</a></li>
+                            <li><a href="events.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
+                            <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-item"></i> Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="--mobile-menu-footer --mobile-bg-gold">
+                    <div class="col-xs-4 p0">
+                        <a href="profile.html"><i class="zmdi zmdi-account"></i></a>
+                    </div>
+                    <div class="col-xs-4 p0">
+                        <a href="tour-map.html"><i class="zmdi zmdi-pin-drop"></i></a>
+                    </div>
+                    <div class="col-xs-4 p0">
+                        <a href="settings.html"><i class="zmdi zmdi-settings"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

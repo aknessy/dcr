@@ -2,9 +2,30 @@ $(function(){
     $('#toggleHeight').on('click', function()
     {
         var target = $(this).data('toggle');
-        $(this).children('i').toggleClass('zmdi-chevron-up zmdi-chevron-down')
-        $(target).toggleClass('--mobile-active')
+        //$(this).children('i').toggleClass('zmdi-chevron-up zmdi-chevron-down')
+        $(target).toggleClass('--mobile-active animated bounce');
     });
+    /**
+     *  
+     */
+    $('#toggleFullSearch').on('click', function(e){
+        var target = $(this).data('target');
+        $(this).parent().addClass('hidden');
+        $(target)
+            .removeClass('--w0-for-transition')
+            .addClass('--transition-for-width');
+    
+        return false;
+    });
+
+    /**
+     * 
+     */
+    $('.triggerField').on('click', function(){
+        var target = $(this).data('target');
+        $(target).trigger('click');
+    })
+
     /**
      * 
      */

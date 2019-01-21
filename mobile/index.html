@@ -6,9 +6,10 @@
         <title>Destination CRS | Welcome</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/mobile.layout.css" />
+        <link rel="stylesheet" href="assets/css/animate.min.css" />
         <link rel="stylesheet" href="assets/css/owl.carousel.css" />
         <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
+        <link rel="stylesheet" href="assets/css/mobile.layout.css" />
 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
@@ -25,8 +26,11 @@
                             <div class="col-xs-12">
                                 <div class="row">
                                     <div class="--mobile-home-search">
-                                        <div class="col-xs-10 pl0 pr0">
-                                            <form action="" class="form form-horizontal pull-right" method="post" data-ajax="true">
+                                        <div class="col-xs-1 pl0 pull-left">
+                                            <a id="toggleFullSearch" href="" class="btn btn-link --btn-padding-override" data-target="#fullSearch"><i class="zmdi zmdi-search"></i></a>
+                                        </div>
+                                        <div id="fullSearch" class="col-xs-10 pl0 pr0 --w0-for-transition">
+                                            <form action="" class="form form-horizontal" method="post">
                                                 <div class="input-group input-group-sm">
                                                     <input type="text" class="form-control" placeholder="Search Destination Cross River" aria-describedby="Search Box">
                                                     <span class="input-group-btn">
@@ -35,7 +39,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="col-xs-2 pr0">
+                                        <div class="col-xs-2 pr0 pull-right">
                                             <a href="home.html" id="menuOpenBtn" class="btn btn-primary btn-block --btn-padding-override" data-target="menuSidebar"><i class="zmdi zmdi-home"></i></a> 
                                         </div>
                                     </div>
@@ -47,72 +51,51 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12">
-                    <div class="row">
-                        <div id="mobile-content-float" class="--mobile-content-float">
-                            <div class="--mobile-content-btn-toggle">
-                                <button id="toggleHeight" type="button" data-toggle="#mobile-content-float" class="btn btn-default"><i class="zmdi zmdi-chevron-up"></i></button>
-                            </div>
-                            <div class="box m0 w100"> 
-                                <div class="--mobile-float-header mt0">
-                                    <div class="content-inner">
-                                        <h4><a href="carnival.html">Calabar Carnival, 2011</a></h4>
-                                        <span>&copy; Foto Studio 2018 </span>
-                                    </div>
-                                    <div class="content-inner gradient-steel-img">
-                                        <div class="--mobile-fluid">
-                                            <span class="pull-left">Follow Us</span>
-                                            <div class="pull-right">
-                                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                                <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                                            </div>
-                                        </div> 
-                                    </div>
+            </div>
+            <div id="mobile-content-float" class="--mobile-content-float p0 emphasis box"> 
+                <div class="--mobile-float-header mt0 gradient-steel-img">
+                    <div class="content-inner">
+                        <h4><a href="carnival.html">Calabar Carnival, 2011</a></h4>
+                        <span>&copy; Foto Studio 2018</span>
+                    </div>
+                </div>
+                <div class="--mobile-float-body --mobile-fluid">
+                    <div class="content-inner nicescroll">
+                        <p class="text-justify m0 p0 scroll" style="height: 200px;">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give
+                        you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the
+                        master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+                    </div>
+                </div>
+                        <!--<div class="content-inner">
+                            <div class="--mobile-fluid">
+                                <span class="pull-left">Follow Us</span>
+                                <div class="pull-right">
+                                    <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                    <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                                    <a href="#"><i class="zmdi zmdi-twitter"></i></a>
                                 </div>
-                            </div>
-                            <div class="box m0 w100">
-                                <div class="--mobile-float-body --mobile-fluid">
-                                    <div class="content-inner">
-                                        <div class="--mobile-fluid" style="text-align:center;">
-                                            <a class="--mobile-link --home" href="eazibizz.html">EaziBizz</a>
-                                            <a class="--mobile-link --home" href="e911.html">e911</a>
-                                            <a class="--mobile-link --home" href="advertise.html">Advertise</a>
-                                            <a class="--mobile-link --home" href="privacy.html">Privacy</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box m0 w100">
-                                <div class="--mobile-float-footer --mobile-fluid">
-                                    <div class="content-inner">
-                                        <p class="m0 text-center">&copy; 2018 destination Cross River</p>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> 
+                        </div>-->
+                <div class="--mobile-float-footer --mobile-fluid m0 gradient-steel-img">
+                    <div class="content-inner">
+                        <div class="--mobile-fluid text-center">
+                            <a class="--mobile-link --home" href="eazibizz.html">EaziBizz</a>
+                            <a class="--mobile-link --home" href="e911.html">e911</a>
+                            <a class="--mobile-link --home" href="advertise.html">Advertise</a>
+                            <a class="--mobile-link --home" href="privacy.html">Privacy</a>
                         </div>
                     </div>
                 </div>
-
-                <div id="sideBarMenu" class="--mobile-menu-top close">
-                    <div class="header-opaque">
-                        <img src="assets/imgs/dcr-logo.png" alt="destination Cross River" />
-                        <button id="menuCloseBtn" class="--menu-close-btn"><i class="zmdi zmdi-close"></i></button>
-                    </div>
-                    <ul class="scroll" role="navigation">
-                        <li><a href="eazibizz.html"><i class="zmdi zmdi-case"></i> EazyBizz</a></li>
-                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> E911</a></li>
-                        <li><a href="user-account.html"><i class="zmdi zmdi-account-o"></i> User Account</a></li>
-                        <li><a href="e911.html"><i class="zmdi zmdi-headset-mic"></i> Market Places</a></li>
-                        <li><a href="places.html"><i class="icon zmdi zmdi-collection-item"></i> Events</a></li>
-                        <li><a href="schedule.html"><i class="zmdi zmdi-calendar"></i> Carnival Schedule</a></li>
-                        <li><a href="gallery.html"><i class="icon zmdi zmdi-collection-item"></i> Gallery</a></li>
-                    </ul>
-                </div>
-
             </div>
+
+            <div class="--mobile-content-btn-toggle">
+                <button id="toggleHeight" type="button" data-toggle="#mobile-content-float" class="btn btn-default">
+                    <i class="zmdi zmdi-info-outline"></i>
+                </button>
+            </div>
+
         </div>
+
         <script src="assets/js/clamp.min.js"></script>
         <script src="assets/js/mobile.app.js"></script>
     </body>
